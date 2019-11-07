@@ -1,6 +1,6 @@
 function _look_around(repeat = true) 
 {
-    misty.MoveHeadPosition(getRandomInt(-5, 5), getRandomInt(-5, 5), getRandomInt(-5, 5), 100);
+    misty.MoveHeadDegrees(getRandomInt(-23, 23), getRandomInt(-35, 35), getRandomInt(-75, 75), 100);
     if (repeat) misty.RegisterTimerEvent("look_around", getRandomInt(5, 10) * 1000, false);
 }
 misty.RegisterTimerEvent("look_around", getRandomInt(5, 10) * 1000, false);
