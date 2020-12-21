@@ -35,7 +35,8 @@
 
 function _look_around(repeat = true) 
 {
-    misty.MoveHeadDegrees(getRandomInt(-23, 23), getRandomInt(-35, 35), getRandomInt(-75, 75), 100);
+    misty.MoveHeadDegrees(getRandomInt(-10, 10), getRandomInt(-15, 15), getRandomInt(-50, 50), 100);
+    misty.MoveArms(getRandomInt(-30, 30), getRandomInt(-30, 30));
     if (repeat) misty.RegisterTimerEvent("look_around", getRandomInt(5, 10) * 1000, false);
 }
 misty.RegisterTimerEvent("look_around", getRandomInt(5, 10) * 1000, false);
